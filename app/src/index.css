@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+.loading-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-logo {
+  width: 300px;
+}
+.nav {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+}
+.nav-content {
+  display: flex;
+}
+.nav-logo {
+  height: 120px;
+}
+.nav-title {
+  width: 90%;
+  text-align: center;
+}
+.nav-title h2 {
+  color: #2faba3;
+}
+
+.card {
+  padding: 15px 15px 15px 15px;
+  /* margin-bottom: 25px; */
+  margin: 25px;
+  height: 180px;
+}
+
+.card-no-border {
+  border: none;
+}
+
+.card-border {
+  border: 1px solid #838383;
+  border-radius: 5px;
+}
+
+.card-md {
+  width: 500px;
+}
+
+.card-lg {
+  width: 850px;
+}
+
+.cards-list {
+  display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0 25px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.card-header {
+  height: 50px;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-body {
+  height: 110px;
+}
+
+.card .card-header h3{
+  color: #f7911e;
+  font-weight: 600;
+}
+
+.card .card-header span{
+  font-size: 13px;
+  color: #838383;
+}
+
+.card .card-body p {
+  padding-top: 5px;
+  color: #303030;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.card .card-footer {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  padding-top: 2px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.card .button {
+  background: transparent;
+  border: none;
+  padding-right: 10px;
+}
+
+.card .button:hover {
+  cursor: pointer;
+}
+
+.button-group .button .thumbs-icon {
+  font-size: 18px;
+}
+
+.card-group .card-icon {
+  font-size: 20px;
+}
+
+.card-group .card-button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.card .card-footer .button-group p {
+  font-size: 13px;
+  color: #838383; 
+}
+
+.card .card-footer .comments-count {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.card .card-footer .comments-count p {
+  font-size: 13px;
+  color: #838383;
+}
+
+.align-card-center {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-row {
+  flex-direction: row;
+}
+
+.align-card-center ul {
+  list-style-type: none;
+}
+
+.filterBy {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.filterBy select {
+  width: 350px;
+  height: 30px;
+  margin-right: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.category-list {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: row;
+  list-style-type: none; 
+}
+
+.category {
+  height: 25px;
+  padding: 15px;
+}
+
+.category h3 {
+  color: #2faba3;
+  font-weight: 500;
+}
+
+.filter-buttons-group {
+  display: flex;
+  margin-left: 25px;
+}
+
+.btnNewPost {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #5cb85c;
+  background: #5cb85c;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(244, 244, 244);
+  letter-spacing: 1px;
+}
+
+.btnNewComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background: #d9ffdb;
+  margin: 15px 0;
+  border: 1px solid #d9ffdb;
+  border-radius: 5px;
+  width: 200px;
+  color: #3d8f3d;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.alignButtonToEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnNewComment .icon {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.btnNewPost:hover {
+  cursor: pointer;
+}
+
+.category-detail-title {
+  display: flex;
+  align-items: center;
+  width: 600px; 
+  margin-left: 15px;
+}
+
+.category-detail-title h4 {
+  font-weight: 500;
+}
+
+.category-detail-title span {
+  color: #2faba3;
+  text-transform: uppercase;
+}
+
+/*Modal*/
+.ReactModal__Content {
+  padding: 0 !important;
+}
+
+
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal .modal-header {
+  display: flex;
+  height: 50px;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d0d0d0;
+  padding: 0 20px;
+}
+
+.modal .modal-header .modal-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #2faba3;
+}
+
+.modal .modal-header .btn-close-modal {
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  background: transparent;
+  font-size: 25px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.modal-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px; 
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.modal-body .modal-input {
+  width: 500px;
+}
+
+.modal-body .modal-textarea {
+  width: 500px;
+  height: 120px;
+  resize: none;
+}
+
+.modal-body .modal-combobox {
+  width: 520px;
+  height: 25px;
+}
+
+.btn {
+    border: 1px solid #5cb85c;
+    background: #5cb85c;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(244, 244, 244);
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.btn-modal-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+}
+
+.comment-input {
+  width: 500px;
+  height: 70px;
+  border: 1px solid #838383;
+  border-radius: 3px;
+  padding: 15px;
+  resize: none;
+  font-size: 14px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.list-style-none {
+  list-style: none;
+}
